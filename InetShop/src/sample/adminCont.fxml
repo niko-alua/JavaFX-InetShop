@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="350.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+    <children>
+        <AnchorPane prefHeight="60.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="46.0" layoutY="17.0" prefHeight="26.0" prefWidth="258.0" text="Administrator sign in window">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+         </children>
+        </AnchorPane>
+          <TextField fx:id="fieldLog" layoutX="62.0" layoutY="78.0" prefHeight="26.0" prefWidth="226.0" promptText="login" />
+          <Button fx:id="butSignInAd" layoutX="235.0" layoutY="176.0" mnemonicParsing="false" text="Sign in" />
+      <PasswordField fx:id="fieldPass" layoutX="62.0" layoutY="130.0" prefHeight="26.0" prefWidth="225.0" promptText="password" />
+      <Label fx:id="labelWrong" layoutX="111.0" layoutY="225.0" text="Wrong login or password!" textFill="RED" />
+    </children>
+</AnchorPane>

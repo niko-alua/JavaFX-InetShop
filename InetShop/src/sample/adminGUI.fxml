@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminGUICont">
+   <children>
+      <AnchorPane layoutX="150.0" layoutY="60.0" prefHeight="340.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;">
+         <children>
+            <AnchorPane fx:id="paneSmPh" prefHeight="340.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="45.0" text="Model" />
+                  <MenuButton fx:id="butModel" layoutX="109.0" layoutY="40.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                    <items>
+                      <MenuItem fx:id="butSamsung" mnemonicParsing="false" text="Samsung" />
+                      <MenuItem fx:id="butApple" mnemonicParsing="false" text="Apple" />
+                        <MenuItem fx:id="butHuawei" mnemonicParsing="false" text="Huawei" />
+                        <MenuItem fx:id="butXiaomi" mnemonicParsing="false" text="Xiaomi" />
+                    </items>
+                  </MenuButton>
+                  <TextField fx:id="fieldPrice" layoutX="109.0" layoutY="97.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="102.0" text="Price" />
+                  <TextField fx:id="fieldCount" layoutX="109.0" layoutY="155.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="160.0" text="Count" />
+                  <Label layoutX="50.0" layoutY="216.0" text="CPU" />
+                  <MenuButton fx:id="butCpu" layoutX="109.0" layoutY="211.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                     <items>
+                        <MenuItem fx:id="but600" mnemonicParsing="false" text="qualcom600" />
+                        <MenuItem fx:id="but700" mnemonicParsing="false" text="qualcom700" />
+                        <MenuItem fx:id="but800" mnemonicParsing="false" text="qualcom800" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="fieldRam" layoutX="109.0" layoutY="271.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="276.0" text="RAM" />
+                  <TextField fx:id="fieldMgpx" layoutX="355.0" layoutY="40.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="275.0" layoutY="45.0" text="MGPX" />
+                  <Label layoutX="275.0" layoutY="102.0" text="Generation" />
+                  <MenuButton fx:id="butGener" layoutX="355.0" layoutY="97.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                     <items>
+                        <MenuItem fx:id="but2G" mnemonicParsing="false" text="2G" />
+                        <MenuItem fx:id="but3G" mnemonicParsing="false" text="3G" />
+                        <MenuItem fx:id="but4G" mnemonicParsing="false" text="4G" />
+                        <MenuItem fx:id="but5G" mnemonicParsing="false" text="5G" />
+                     </items>
+                  </MenuButton>
+                  <Button fx:id="butAdding" layoutX="446.0" layoutY="271.0" mnemonicParsing="false" text="ADD" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneComp" prefHeight="340.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;">
+               <children>
+                  <Label layoutX="50.0" layoutY="45.0" text="Model" />
+                  <MenuButton fx:id="butModelComp" layoutX="109.0" layoutY="40.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                     <items>
+                        <MenuItem fx:id="butAcer" mnemonicParsing="false" text="Acer" />
+                        <MenuItem fx:id="butHP" mnemonicParsing="false" text="HP" />
+                        <MenuItem fx:id="butLenovo" mnemonicParsing="false" text="Lenovo" />
+                        <MenuItem fx:id="butNeo" mnemonicParsing="false" text="Neo" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="fieldPriceComp" layoutX="109.0" layoutY="97.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="102.0" text="Price" />
+                  <TextField fx:id="fieldCountComp" layoutX="109.0" layoutY="155.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="160.0" text="Count" />
+                  <Label layoutX="50.0" layoutY="216.0" text="CPU" />
+                  <MenuButton fx:id="butCpuComp" layoutX="109.0" layoutY="211.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                     <items>
+                        <MenuItem fx:id="butCore3" mnemonicParsing="false" text="corei3" />
+                        <MenuItem fx:id="butCore5" mnemonicParsing="false" text="corei5" />
+                        <MenuItem fx:id="butCore7" mnemonicParsing="false" text="corei7" />
+                        <MenuItem fx:id="butCore9" mnemonicParsing="false" text="corei9" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="fieldRamComp" layoutX="109.0" layoutY="271.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="276.0" text="RAM" />
+                  <Label layoutX="275.0" layoutY="45.0" text="SSD" />
+                  <Label layoutX="275.0" layoutY="102.0" text="Memory" />
+                  <Button fx:id="butAddingComp" layoutX="446.0" layoutY="271.0" mnemonicParsing="false" text="ADD" />
+                  <ToggleButton fx:id="butSsdYes" layoutX="355.0" layoutY="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="56.0" text="Yes" />
+                  <ToggleButton fx:id="butSsdNo" layoutX="422.0" layoutY="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="56.0" text="No" />
+                  <TextField fx:id="fieldMemory" layoutX="361.0" layoutY="97.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneLaptop" prefHeight="340.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;">
+               <children>
+                  <Label layoutX="50.0" layoutY="45.0" text="Model" />
+                  <MenuButton fx:id="butModelLaptop" layoutX="109.0" layoutY="40.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                     <items>
+                        <MenuItem fx:id="butAcerLaptop" mnemonicParsing="false" text="Acer" />
+                        <MenuItem fx:id="butAsus" mnemonicParsing="false" text="Asus" />
+                        <MenuItem fx:id="butLenovoLaptop" mnemonicParsing="false" text="Lenovo" />
+                        <MenuItem fx:id="butAppleLaptop" mnemonicParsing="false" text="Apple" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="fieldPriceLaptop" layoutX="109.0" layoutY="97.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="102.0" text="Price" />
+                  <TextField fx:id="fieldCountLaptop" layoutX="109.0" layoutY="155.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="160.0" text="Count" />
+                  <Label layoutX="50.0" layoutY="216.0" text="CPU" />
+                  <MenuButton fx:id="butCpuLaptop" layoutX="109.0" layoutY="211.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0">
+                     <items>
+                        <MenuItem fx:id="butCore3Laptop" mnemonicParsing="false" text="corei3" />
+                        <MenuItem fx:id="butCore5Laptop" mnemonicParsing="false" text="corei5" />
+                        <MenuItem fx:id="butCore7Laptop" mnemonicParsing="false" text="corei7" />
+                        <MenuItem fx:id="butCore9Laptop" mnemonicParsing="false" text="corei9" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="fieldRamLaptop" layoutX="109.0" layoutY="271.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="50.0" layoutY="276.0" text="RAM" />
+                  <Label layoutX="275.0" layoutY="45.0" text="SSD" />
+                  <Label layoutX="275.0" layoutY="102.0" text="Memory" />
+                  <Button fx:id="butAddingLaptop" layoutX="446.0" layoutY="271.0" mnemonicParsing="false" text="ADD" />
+                  <ToggleButton fx:id="butSsdYesLaptop" layoutX="357.0" layoutY="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="56.0" text="Yes" />
+                  <ToggleButton fx:id="butSsdNoLaptop" layoutX="424.0" layoutY="40.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="56.0" text="No" />
+                  <TextField fx:id="fieldMemoryLaptop" layoutX="357.0" layoutY="97.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="275.0" layoutY="160.0" text="Weight" />
+                  <TextField fx:id="fieldWeight" layoutX="357.0" layoutY="155.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter" />
+                  <Label layoutX="275.0" layoutY="216.0" text="TouchPad" />
+                  <ToggleButton fx:id="butTouchYes" layoutX="357.0" layoutY="211.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="56.0" text="Yes" />
+                  <ToggleButton fx:id="butTouchNo" layoutX="424.0" layoutY="211.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="56.0" text="No" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneDel" prefHeight="340.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;">
+               <children>
+                  <Button fx:id="allDevDelButton" layoutX="170.0" layoutY="14.0" mnemonicParsing="false" text="Devices" />
+                  <Button fx:id="allWearingDelButton" layoutX="310.0" layoutY="14.0" mnemonicParsing="false" text="Wearings" />
+                  <ListView fx:id="viewDelSmPh" layoutY="48.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <ListView fx:id="viewDelComp" layoutY="49.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <ListView fx:id="viewDelLaptop" layoutY="49.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <ListView fx:id="viewDelWearing" layoutY="49.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <Button fx:id="butDel" layoutX="241.0" layoutY="295.0" mnemonicParsing="false" text="DELETE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneAddAmount" prefHeight="340.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;">
+               <children>
+                  <Button fx:id="allDevAmountButton" layoutX="170.0" layoutY="14.0" mnemonicParsing="false" text="Devices" />
+                  <Button fx:id="allWearingAmountButton" layoutX="310.0" layoutY="14.0" mnemonicParsing="false" text="Wearings" />
+                  <ListView fx:id="viewAmountSmPh" layoutY="48.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <ListView fx:id="viewAmountComp" layoutY="49.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <ListView fx:id="viewAmountLaptop" layoutY="49.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <ListView fx:id="viewAmountWearing" layoutY="49.0" prefHeight="242.0" prefWidth="550.0" style="-fx-background-color: #E0FFFF;" />
+                  <Button fx:id="butAddingAmount" layoutX="292.0" layoutY="295.0" mnemonicParsing="false" text="ADD AMOUNT" />
+                  <TextField fx:id="addNumber" layoutX="168.0" layoutY="295.0" prefHeight="31.0" prefWidth="76.0" />
+                  <Label layoutX="23.0" layoutY="300.0" text="How much to add?" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="340.0" prefWidth="150.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <MenuButton fx:id="menuDev" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" text="Devices">
+              <items>
+                <MenuItem fx:id="itemSmartPhone" mnemonicParsing="false" text="Smart Phone" />
+                <MenuItem fx:id="itemComputer" mnemonicParsing="false" text="Computer" />
+                  <MenuItem fx:id="itemLaptop" mnemonicParsing="false" text="Laptop" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="menuWear" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" text="Wearings">
+               <items>
+                  <MenuItem fx:id="itemTshirt" mnemonicParsing="false" text="T-Shirt" />
+                  <MenuItem fx:id="itemSneak" mnemonicParsing="false" text="Sneakers" />
+               </items>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="60.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button fx:id="butSignOut" layoutX="608.0" layoutY="17.0" mnemonicParsing="false" text="Sign out" />
+            <Button fx:id="butAddGood" layoutX="32.0" layoutY="17.0" mnemonicParsing="false" text="Add good" />
+            <Button fx:id="butDelGood" layoutX="167.0" layoutY="17.0" mnemonicParsing="false" text="Delete good" />
+            <Button fx:id="butAddAmount" layoutX="309.0" layoutY="17.0" mnemonicParsing="false" text="Add amount" />
+            <Button fx:id="butIncome" layoutX="444.0" layoutY="17.0" mnemonicParsing="false" text="Income statement" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
